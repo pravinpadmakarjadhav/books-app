@@ -48,7 +48,7 @@ const bookDB = {
 };
 
 export default function App() {
-  const [chosenGenre, setGenre] = useState("Discovering_Yourself");
+  const [chosenGenre, setGenre] = useState("fiction");
   function genreClickHandler(genre) {
     setGenre(genre);
   }
