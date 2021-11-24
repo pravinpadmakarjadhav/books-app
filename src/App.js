@@ -19,7 +19,7 @@ const bookListDB = {
       name: "Poor Charlie's Almanack",
       author: " Charles T. Munger, Peter E. Kaufman",
       rating: "4/5",
-      description:
+      description:""
       
     }
   ],
