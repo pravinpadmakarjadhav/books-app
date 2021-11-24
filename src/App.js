@@ -2,43 +2,78 @@ import React, { useState } from "react";
 import "./styles.css";
 
 const bookListDB = {
-  Javascript: [
-    { name: "Eloquent Javascript", author: "Marijn Haverbeke" },
-    { name: "You Don't Know JS", author: "Kyle Simpson" },
-    { name: "Javascript The Definitive Guide", author: "David Flanagan" },
-    { name: "Head First JavaScript Programming", author: "Eric T Morrison " },
-    { name: "JavaScript The Good Parts", author: "Douglas Crockford" }
-  ],
-  Investing: [
-    { name: "Learn to earn", author: "Peter Lynch" },
-    { name: "Flirting with Stocks", author: "Anil Lamba" },
-    { name: "Coffee Can Investing", author: "Saurabh Mukherjea" },
-    { name: "The Simple Path to Wealth", author: "J.L.collins" },
-
-    {
-      name: "Poor Charlie's Almanack",
-      author: " Charles T. Munger, Peter E. Kaufman"
+  {
+    "books": {
+      "fantasy": [
+        {
+          "name": "She who became the sun",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1625048838l/48727813._SY475_.jpg",
+          "rating": "4.5"
+        },
+        {
+          "name": "Any Way the Wind Blows",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610744543l/52190991.jpg",
+          "rating": "3.5"
+        },
+        {
+          "name": "Six Crimson Cranes",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603387427l/53457092._SY475_.jpg",
+          "rating": "4.5"
+        }
+      ],
+      "music": [
+        {
+          "name": "The Mixtape",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603213764l/55747432._SY475_.jpg",
+          "rating": "4.23"
+        },
+        {
+          "name": "Rise to the Sun",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602746717l/50999975._SY475_.jpg",
+          "rating": "3.23"
+        },
+        {
+          "name": "XOXO",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602086642l/54618808._SY475_.jpg",
+          "rating": "4.23"
+        }
+      ],
+      "psychology": [
+        {
+          "name": "For Your Own Good",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603912707l/52379865.jpg",
+          "rating": "4.23"
+        },
+        {
+          "name": "Not a Happy Family",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1608637770l/56366617.jpg",
+          "rating": "3.95"
+        },
+        {
+          "name": "The Comfort Book",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1608484192l/55825273.jpg",
+          "rating": "4.23"
+        }
+      ],
+      "science": [
+        {
+          "name": "This Is Your Mind on Plants",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1606111590l/56015023._SY475_.jpg",
+          "rating": "4.23"
+        },
+        {
+          "name": "Fox & I",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1611152260l/56764127.jpg",
+          "rating": "4.23"
+        },
+        {
+          "name": "Seek You: A Journey Through American Loneliness",
+          "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1604997087l/55648627.jpg",
+          "rating": "4.23"
+        }
+      ]
     }
-  ],
-
-  Fiction: [
-    { name: "1984", author: "George Orwell" },
-    { name: "The Alchemist", author: "Paulo Coelho" },
-    { name: "Mahanayak", author: "Vishwas Patil" },
-    { name: "Kosala", author: " Bhalchandra Nemade" },
-    { name: "Mrityunjaya", author: "Shivaji Sawant" }
-  ],
-  NonFiction: [
-    { name: "Range", author: "David Epstein" },
-    { name: "AntiFragile", author: "Nassim N. Taleb" },
-    {
-      name: "Sapiens: A Brief History of Humankind",
-      author: "Yuval Noah Harari"
-    },
-    { name: "Imagining India", author: "Nandan Nilekani" },
-    { name: "Arthat", author: "Achyut Godbole" }
-  ]
-};
+  }
 var bookList = Object.keys(bookListDB);
 // ["Javascript","Philosohy","Fiction"]
 
