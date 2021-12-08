@@ -13,15 +13,18 @@
 }
 
 :root {
-  --primaryColor: rgb(55, 103, 207);
+  --primaryColor: rgb(119, 125, 138);;
   --secondaryColor: rgb(36, 33, 33);
   font-family: 'Varela Round', sans-serif;
 }
 
 body {
   margin: 2rem;
+  background-color:#3b3b3b;
   
 }
+  
+
 
 hr {
   border: 1px solid var(--primaryColor);
@@ -36,7 +39,7 @@ button.btn {
   color: var(--secondaryColor);
 }
 button:hover {
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: ;
   border: 1px solid white;
 }
 
